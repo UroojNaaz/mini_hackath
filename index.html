@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins-Regular">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar start-->
+    <!-- nav-1 -->
+    <div class="container-fluid nav-1 ">
+        <div class="container">
+            <div class="left-content">
+                <span class="addressicon"><i class="fa-regular fa-envelope" style="color: #666666;"></i></span>
+                <span class="contact">info@SaylaniWelfare.com</span>
+                <span class="addressicon"><i class="fa-solid fa-phone" style="color: #666666;"></i></span>
+                <span class="contact">021-111-729-526</span>
+
+                <!-- Language dropdown -->
+                <div class="language-dropdown ms-auto">
+                    <select>
+                        <option value="en" class="language-option">English</option>
+                        <option value="ur" class="language-option">اردو</option>
+                        <option value="tr" class="language-option">Türkçe</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav-1 end -->
+
+    <!-- nav-2 -->
+    <nav class="navbar navbar-expand-xl bg-body-light sticky-top navbar-2">
+        <div class="container">
+            <p class="navbar-brand">
+                <a href="./index.html" class="logo_link" style="border: none;"><img src="./images/logo.png" alt="image"
+                        class="logo"></a>
+            </p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-list">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Introduction</a></li>
+                            <li><a class="dropdown-item" href="#">Chairman Message</a></li>
+                            <li><a class="dropdown-item" href="#">Audit Reports</a></li>
+                            <li><a class="dropdown-item" href="#">Tax Exemption Certificate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Health</a></li>
+                            <li><a class="dropdown-item" href="#">Education</a></li>
+                            <li><a class="dropdown-item" href="#">Food</a></li>
+                            <li><a class="dropdown-item" href="#">Sadiqah Jariha</a></li>
+                            <li><a class="dropdown-item" href="#">Social Welfare</a></li>
+                            <li><a class="dropdown-item" href="#">Disaster Aid</a></li>
+                            <li><a class="dropdown-item" href="#">Saylani Ehsaas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="mediaDropdown">
+                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                            <li><a class="dropdown-item" href="#">Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Branches</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Bank Detail</a>
+                    </li>
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="overseasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Overseas Donor
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="overseasDropdown">
+                            <li><a class="dropdown-item" href="#">Saylani UK</a></li>
+                            <li><a class="dropdown-item" href="#">Saylani US</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- button -->
+                <form class="d-flex nav_button" role="search">
+                    <button class="btn nav_button-1" type="submit">DONATE NOW</button>
+                    <button class="btn nav_button-2" type="submit">BE A SPONSER</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar-end -->
+
+    <!-- section-1 -->
+    <section>
+        <div class="container-fluid ">
+            <div class="container sec1">
+                <div class="row">
+
+                    <!-- Left side -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 sec1-text">
+                        <h1>Welcome to the <br>
+                            <span class="welfarename">Saylani</span>
+                            Welfare
+                        </h1>
+
+                        <h3>The largest NGO offering free <span
+                                style="color: #0d6db7 !important; font-size: 1.6rem !important; font-weight: bold !important;">healthcare
+                                and lots more.</span>
+                        </h3>
+
+                        <p>Saylani Welfare is on the ground and already working with local communities to assess how
+                            best to
+                            support underprivileged families in more than 63 areas of day to day lives.</p>
+
+                        <!-- Button -->
+                        <a href="https://saylaniwelfare.com/en/about/saylani-introduction" target="_blank"
+                            class="explorer_link"> <button class="btn sec1-button">Explorer More
+                                <i class="fa-solid fa-arrow-right" style="color: black;"></i>
+                            </button></a>
+                    </div>
+                    <!-- Left side end -->
+
+                    <!-- Right side -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <img src="./images/38.png" alt="image" class="sec1-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-1 end -->
+
+    <!-- section-2 (quick donate) -->
+
+    <section class="container">
+        <div class="container sec2">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="input-group">
+                        <span class="input-group-text sec2_general">General</span>
+                        <input type="text" class="form-control sec2_amount" aria-label="Amount (to the nearest dollar)"
+                            placeholder="0" style="border: 1px solid black:  !important;">
+                        <span class="input-group-text"
+                            style=" background-color: #424242 !important; color: white !important; padding: 0.7rem 0.8rem !important;">Rs.</span>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                            <button class="btn sec2-button">Blood Bank / Thalassemia treatment</button>
+
+                            <button class="btn sec2-button">Family Kifalat</button>
+
+                            <button class="btn sec2-button">Medical</button>
+
+                            <button class="btn sec2-button">Food</button>
+
+                            <button class="btn sec2-button " id="donate">Quick Donate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-2 end -->
+
+    <!-- section-3 starts -->
+    <div class="container sec_3">
+        <img src="./images/95f11c54-b518-4d7f-8d24-b280acc914ef.jpg" class="sec3-image" alt="walfare image">
+    </div>
+    <!-- section-3 end -->
+
+    <!-- section-4 -->
+    <div class="container sec4">
+        <div class="row ">
+            <h3>What We Are Doing</h3>
+        </div>
+        <div class="row">
+
+            <!-- Service No-1 -->
+            <div class="col sec4-image1">
+                <img src="./images/44.png" alt="">
+                <p>Welfare</p>
+            </div>
+
+            <!-- Service No-2 -->
+            <div class="col sec4-image2">
+                <img src="./images/41.png" alt="">
+                <p>Medical</p>
+            </div>
+
+            <!-- Service No-3 -->
+            <div class="col sec4-image3">
+                <img src="./images/39.png" alt="">
+                <p>Online Sadqah</p>
+            </div>
+            <!-- Service No-4 -->
+            <div class="col sec4-image1">
+                <img src="./images/40.png" alt="">
+                <p>RO Plant</p>
+            </div>
+
+            <!-- Service No-5 -->
+            <div class="col sec4-image4">
+                <img src="./images/48.png" alt="">
+                <p>Education</p>
+            </div>
+
+            <!-- Service No-6 -->
+            <div class="col sec4-image4">
+                <img src="./images/43.png" alt="">
+                <p>Food</p>
+            </div>
+        </div>
+    </div>
+    <!--section-4 end -->
+
+    <!-- section-5 (Donate) -->
+    <div class="container">
+        <div class="row">
+            <!-- box-1 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 color_overlay">
+                <div class="sec5-box1">
+                    <h5>IT Entrepreneurship Courses</h5>
+                    <div class="d-grid">
+                        <button class="btn sec5-button" type="button">Donate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- box-2 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="sec5-box2">
+                    <h5>Daily Food</h5>
+                    <div class="d-grid ">
+                        <button class="btn sec5-button" type="button">Donate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- box-3 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="sec5-box3">
+                    <h5>Zakat</h5>
+                    <div class="d-grid">
+                        <button class="btn sec5-button" type="button">Donate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <!-- section-6 (Projects) -->
+    <section class="container">
+        <div class="project">
+            <!-- left-side -->
+            <div class="row">
+                <div class="col-6 project-leftside">
+                    <img src="./images/2178912-image-1584559620.jpg" alt="projectimage">
+                    <div class="pls_box top-left">
+                        <h3 style="color: white; font-weight: bold; padding: 12% 18% 0% 20%; text-align: left;">Saylani
+                            serve
+                            almost 300,000 underprivileged on a daily basis</h3>
+                    </div>
+                    <div class="pls_box top-right"></div>
+                    <div class="pls_box bottom-left"></div>
+                    <div class="pls_box bottom-right"></div>
+                </div>
+
+                <!-- right side -->
+                <div class="col-6 project-rightside">
+                    <div class="row">
+                        <h1>Other Projects</h1>
+                    </div>
+
+                    <!-- PROJECT No-1 -->
+                    <div class="row">
+                        <div class="col-2 d-flex justify-content-center project-rsicon">
+                            <img src="./images/47.png" alt="Hepatitis">
+                        </div>
+                        <div class="col-10">
+                            <h6>Hepatitis</h6>
+                            <p>Saylani Welfare has also set up a clinic for the
+                                best
+                                treatment of hepatitis patients where
+                                hepatitis patients are being treated</p>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT No-2 -->
+                    <div class="row">
+                        <div class="col-2 d-flex justify-content-center project-rsicon">
+                            <img src="./images/46.png" alt="HousingSociety">
+                        </div>
+                        <div class="col-10">
+                            <h6>
+                                Housing Society</h6>
+                            <p>Saylani Welfare is also providing its own home
+                                facility for the homeless people. So far, thousands of houses and flats have been
+                                constructed and given in easy installments</p>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT No-3 -->
+                    <div class="row">
+                        <div class="col-2 d-flex justify-content-center project-rsicon">
+                            <img src="./images/42.png" alt="ITLiteracy">
+                        </div>
+                        <div class="col-10">
+                            <h6>
+                                IT Literacy</h6>
+                            <p>We are committed to developing more than 1
+                                million
+                                software developers, which will add about 100 billion annually to Pakistan's economy and
+                                help ease the debt burden on Pakistan</p>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT No-4 -->
+                    <div class="row">
+                        <div class="col-2 d-flex justify-content-center project-rsicon">
+                            <img src="./images/45.png" alt="Tharparkar">
+                        </div>
+                        <div class="col-10">
+                            <h6>Tharparkar</h6>
+                            <p>In Tharparkar, Saylani has set up several schools
+                                and
+                                ro plants, dug wells and brought the children there to Karachi and taught them modern
+                                technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!-- section-7 (Counters) -->
+    <section class="container">
+        <div class="number_counter">
+            <div class="row">
+
+                <!-- No-1 -->
+                <div class="col-3 number_counter-icon">
+                    <span class="number_counter-color">
+                        <img src="./images/50.png" alt="icon-1">
+                    </span>
+                    <h2>300000</h2>
+                    <h6>Food</h6>
+                    <h6>(Daily)</h6>
+                </div>
+
+                <!-- No-2 -->
+                <div class="col-3 number_counter-icon">
+                    <span class="number_counter-color">
+                        <img src="./images/49.png" alt="icon-2">
+                    </span>
+                    <h2>20000</h2>
+                    <h6>Family adoption</h6>
+                    <h6>(Monthly)</h6>
+                </div>
+
+                <!-- No-3 -->
+                <div class="col-3 number_counter-icon">
+                    <span class="number_counter-color">
+                        <img src="./images/51.png" alt="icon-3">
+                    </span>
+                    <h2>25000</h2>
+                    <h6>Education</h6>
+                    <h6>(Monthly)</h6>
+                </div>
+
+                <!-- No-4 -->
+                <div class="col-3 number_counter-icon">
+                    <span class="number_counter-color">
+                        <img src="./images/52.png" alt="icon-4">
+                    </span>
+                    <h2>35000</h2>
+                    <h6>Medical</h6>
+                    <h6>(Monthly)</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!--section-8 (Our Testimonials) -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 style="text-align: center;  color: #8dc63f; font-size: 1rem; padding-top: 2.6rem;">
+                    Our Testimonials
+                </h2>
+                <h2 style="text-align: center; font-size: 2rem; font-weight: bold; padding-top: 0.5rem;">
+                    What They Say?
+                </h2>
+            </div>
+        </div>
+        <!-- carousel -->
+        <div id="myCarousel" class="carousel slide custom-carousel" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ul>
+            <div class="container mt-5">
+                <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- No-1 -->
+                        <div class="carousel-item active">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                                <div class="testimonials_box">
+                                    <img src="./images/95.jpg" alt="Arshad Wali Muhammad" class="testimonial_image">
+                                    <h4>Arshad Wali Muhammad</h4>
+                                    <span>(Group Director, Gerry’s Group)</span>
+                                    <p>Saylani Welfare Trust is a name that needs no introduction today. The journey
+                                        this
+                                        team embarked upon was made possible owing to their zeal, enthusiasm &
+                                        commitment to
+                                        the society and by the grace of Allah (SWT), it has become a name that we need
+                                        and
+                                        not just the one we want. I wish Saylani’s team all the success and blessing
+                                        that
+                                        they deserve for future, May God bless Saylani and ensure prosperity and
+                                        happiness
+                                        for our people, Ameen!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- No-2 -->
+                        <div class="carousel-item">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                                <div class="testimonials_box">
+                                    <img src="./images/96.jpg" alt="Asif Ismail" class="testimonial_image">
+                                    <h4>Asif Ismail</h4>
+                                    <span>(C.O.O. & Director, Premier Cables Pvt. Ltd)</span>
+                                    <p>When we talk about serving humanity, no second thought occurs other than Saylani
+                                        Welfare Trust. Saylani is doing a tremendous job in terms of everything they do
+                                        for
+                                        a troubled humanity. From offering food to the hungry to arranging jobs for
+                                        jobless
+                                        people, arranging marriages and dowry for orphaned girls, offering free medical
+                                        facilities, and much more. We sincerely wish them success in their future
+                                        endeavors
+                                        and in raising their standards of serving mankind in a better and more
+                                        professional
+                                        way!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Buttons -->
+
+                        <button class="carousel-control-prev" data-bs-target="#testimonialsCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--section-8 (Our Testimonials) End -->
+
+    <!-- section-9 (Media Updates) Start -->
+    <div class="container media-updates">
+        <div class="row">
+            <div class="col">
+                <h2
+                    style="text-align: center; font-size: 2rem; font-weight: bold; padding-top: 0.5rem; padding-bottom: 4rem; ">
+                    Media Updates</h2>
+            </div>
+        </div>
+
+        <!-- card 1 -->
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card media_card" style="width: 18rem; margin-right: 10px!important;">
+                    <img src="./images/46296887-d70e-4d3c-a9e2-5b264e13ca23.png" class="card-img-top mediabanner_image"
+                        alt="banner image">
+                    <p class="card_shadow"></p>
+                    <h5 class="card-title media_date">Sat Sep 23 2023</h5>
+                    <a href="https://www.youtube.com/watch?v=meCemLIkTRI&t=5s" target="_blank"> <img class="media_icon"
+                            src="./images/download.png" alt="mediaplayer-icon"></a>
+                    <div class="card-body">
+                        <h5 class="card-title media_text">Mr. Jason MacKenzie visited Saylani Welfare | Jason
+                            MacKenzie
+                            Lauds
+                            Saylani's Work | #Saylani #2023</h5>
+                        <p class="card-text media_tag"> #Charity #Organisation </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card media_card " style="width: 18rem;  margin-right: 10px!important;">
+                    <div>
+                        <img src="./images/d1735640-6e81-4eb7-83c7-d7209cb373f1.png"
+                            class="card-img-top mediabanner_image " alt="banner image">
+                        <p class="card_shadow">
+                        </p>
+                        <h5 class="card-title media_date">Fri Sep 22 2023</h5>
+                        <a href="https://www.youtube.com/watch?v=NVcX2AnyfKo&t=1s" target="_blank"> <img
+                                class="media_icon" src="./images/download.png" alt="mediaplayer-icon"></a>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title media_text">Saylani Techno Kids Courses | Students Feedback from
+                            Techno
+                            Kids Batch 04
+                            | #Saylani #Techno #SMIT</h5>
+                        <p class="card-text media_tag"> #Charity #Organisation </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card media_card">
+                    <div>
+                        <img src="./images/65b7201e-aa98-4512-92b9-d8448cb617aa.png"
+                            class="card-img-top mediabanner_image" alt="banner image">
+                        <p class="card_shadow"></p>
+                        <h5 class="card-title media_date">Thu Sep 21 2023</h5>
+                        <a href="https://www.youtube.com/watch?v=FcQ5dpPCrMA&t=1s" target="_blank"> <img
+                                class="media_icon" src="./images/download.png" alt="mediaplayer-icon"></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title media_text">Maulana Bashir Farooq Qadri Message | اب وقت آگیا ہے کفایت
+                            شعاری کو
+                            اپنانے کا! | #Saylani #Inflation</h5>
+                        <p class="card-text media_tag"> #Charity #Organisation </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card media_card" style="width: 18rem;  margin-right: 30px!important;">
+                    <div>
+
+                        <img src="./images/62dbe0af-4d55-46a6-bff8-4f1871dc1bd3.png"
+                            class="card-img-top mediabanner_image" alt="banner image">
+                        <p class="card_shadow"></p>
+                        <h5 class="card-title media_date">Tue Sep 19 2023</h5>
+
+                        <a href="https://www.youtube.com/watch?v=g4PBdbvcw7k" target="_blank"> <img class="media_icon"
+                                src="./images/download.png" alt="mediaplayer-icon"></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title media_text">Saylani Free Mega Health Camp | Karachi #Saylani
+                            #Medicalcamp
+                            #2023</h5>
+                        <p class="card-text media_tag"> #Charity #Organisation </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card media_card">
+                    <div>
+                        <img src="./images/65b7201e-aa98-4512-92b9-d8448cb617aa.png"
+                            class="card-img-top mediabanner_image" alt="banner image">
+                        <p class="card_shadow"></p>
+                        <h5 class="card-title media_date">Thu Sep 21 2023</h5>
+
+                        <a href="https://www.youtube.com/watch?v=FcQ5dpPCrMA&t=1s" target="_blank"> <img
+                                class="media_icon" src="./images/download.png" alt="mediaplayer-icon"></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title media_text">Maulana Bashir Farooq Qadri Message | اب وقت آگیا ہے کفایت
+                            شعاری کو
+                            اپنانے کا! | #Saylani #Inflation</h5>
+                        <p class="card-text media_tag"> #Charity #Organisation </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card media_card">
+                    <div>
+                        <img src="./images/03262fe1-dc32-444c-b187-cddd4892052e.png"
+                            class="card-img-top mediabanner_image" alt="banner image">
+                        <p class="card_shadow"></p>
+                        <h5 class="card-title media_date">Sat Sep 16 2023</h5>
+
+                        <a href="https://www.youtube.com/watch?v=ZOwHIThPEPk&t=7s" target="_blank"> <img
+                                class="media_icon" src="./images/download.png" alt="mediaplayer-icon"></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title media_text">Month of Rabi ul Awal | Message by Hazrat Bashir Farooq
+                            Qadri
+                            | Saylani
+                            #Mustafa #RabiulAwal</h5>
+                        <p class="card-text media_tag"> #Charity #Organisation </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 7 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card media_card">
+                    <div>
+                        <img src="./images/8ba9bbf9-caf3-407c-9b16-9ca6507332c9.png"
+                            class="card-img-top mediabanner_image" alt="banner image">
+                        <p class="card_shadow"></p>
+                        <h5 class="card-title media_date">Sat Sep 16 2023</h5>
+
+                        <a href="https://www.youtube.com/watch?v=iofTmCteLEs" target="_blank"> <img class="media_icon"
+                                src="./images/download.png" alt="mediaplayer-icon"></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title media_text">Excitium Cyber Security's US Team Visits Saylani |
+                            Applauding
+                            Remarkable
+                            Achievements | #Saylani #IT</h5>
+                        <p class="card-text media_tag"> #Charity #Organisation #MOU</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 8 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card media_card">
+                    <div>
+                        <img src="./images/65b7201e-aa98-4512-92b9-d8448cb617aa.png"
+                            class="card-img-top mediabanner_image" alt="banner image">
+                        <p class="card_shadow"></p>
+                        <h5 class="card-title media_date">Thu Sep 21 2023</h5>
+                        <a href="https://www.youtube.com/watch?v=FcQ5dpPCrMA&t=1s" target="_blank"> <img
+                                class="media_icon" src="./images/download.png" alt="mediaplayer-icon"></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title media_text">Maulana Bashir Farooq Qadri Message | اب وقت آگیا ہے کفایت
+                            شعاری کو
+                            اپنانے کا! | #Saylani #Inflation</h5>
+                        <p class="card-text media_tag"> #Charity #Organisation </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- section-10 (News) Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="news_title">News</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- news card-1 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card news_cards">
+                    <img src="./images/88f04b2b-4ff8-4f9e-b427-e8653c3985a9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title news_date">Mon Sep 18 2023</h5>
+                        <p class="card-text news_text">I.G. Sindh, Riffat Mukhtar Raja, visited the Sayla...</p>
+                        <p> <a href="https://saylaniwelfare.com/en/news/650922a54ffafada8399f7d4" target="_blank"
+                                rel="noopener noreferrer"><i class="fa-solid fa-arrow-right news_icons"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- news card-2 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 ">
+                <div class="card news_cards">
+                    <img src="./images/9d1c0565-196f-416d-a18c-169599c3f34a.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title news_date">Wed Aug 30 2023</h5>
+                        <p class="card-text news_text">
+                        <h2
+                            style="font: 1.1em times new roman; font-weight: bolder !important; line-height: 0.6rem !important;">
+                            Dr. Sarosh Hashmat Lodi</h2>
+                        (Vice C...)
+                        </p>
+                        <p> <a href="https://saylaniwelfare.com/en/news/64f015bb54b123dfa2bb9f2b" target="_blank"
+                                rel="noopener noreferrer"><i class="fa-solid fa-arrow-right news_icons"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- news card-3 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card news_cards">
+                    <img src="./images/cb8bbc42-0d0c-4990-a904-74b0cf395b40.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title news_date">Sat Aug 26 2023</h5>
+                        <p class="card-text news_text">The Senior leadership team of easypaisa visited to...</p>
+                        <p> <a href="https://saylaniwelfare.com/en/news/64ec475201215a8d32d1468b" target="_blank"
+                                rel="noopener noreferrer"><i class="fa-solid fa-arrow-right news_icons"></i> </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- news card-4 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card news_cards">
+                    <img src="./images/b72b5879-4fc6-49f4-938f-bc8be357cc95.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title news_date">Tue Aug 22 2023</h5>
+                        <p class="card-text news_text">President and CEO of Faysal Islami(....)</p>
+                        <p> <a href="https://saylaniwelfare.com/en/news/64ec475201215a8d32d1468b" target="_blank"
+                                rel="noopener noreferrer"><i class="fa-solid fa-arrow-right news_icons"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-10 (News) end -->
+
+    <!-- section-11 (Saylani Guide) -->
+    <section class="container">
+        <div class="row">
+            <div class="guide_section">
+                <h2 style="text-align: center; color: white;">Saylani Guide</h2>
+                <form>
+                    <div class="mb-1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter E-Mail address">
+                    </div>
+                    <button type="submit" class="btn">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- section-11 (Saylani Guide) end -->
+
+    <!-- footer starts -->
+    <footer class="container-fluid">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="bottom_border">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="row">
+                                <img src="./images/logo.png" alt="logo">
+                            </div>
+                            <div class="row">
+                                <div class="col-4 footer-icons">
+                                    <a href="https://www.facebook.com/SaylaniWelfareInternationalTrust" target="_blank"
+                                        rel="noopener noreferrer"><img src="./images/download (1).png"
+                                            alt="facebook icon"></a>
+                                </div>
+                                <div class="col-4 footer-icons">
+                                    <a href="https://twitter.com/OfficialSwit" target="_blank"><img
+                                            src="./images/download (2).png" alt="tweeter icon"></a>
+                                </div>
+                                <div class="col-4 footer-icons">
+                                    <a href="https://www.youtube.com/c/SaylaniWelfareInternationalTrust"
+                                        target="_blank"> <img src="./images/download (3).png" alt="youtube icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <h5 class="about">About</h5>
+                            <p class="about" href="#">Introduction</p>
+                            <p class="about" href="#">Chairman Message</p>
+                            <p class="about" href="#">Annual Report</p>
+                            <p class="about" href="#">Bank Details</p>
+                        </div>
+
+                        <div class="col-3 ">
+                            <h5 class="explore">Explore</h5>
+                            <p class="explore" href="#">News</p>
+                            <p class="explore" href="#">Media</p>
+                            <p class="explore" href="#">Contact</p>
+                            <p class="explore" href="#"> Donation</p>
+                        </div>
+
+                        <div class="col-3 ">
+                            <h5 class="contacts">Contact</h5>
+                            <div class="cont">
+                                <p class="contacts" href="#">A-25, Bahadurabad Chowrangi Karachi, Pakistan</p>
+                                <p class="contacts" href="#">UAN: 111-729-526 (+0092-213)4130786-90</p>
+                                <p class="contacts" href="#">CELL: 92-311-1729526</p>
+                                <p class="contacts" href="#">USA NO +1(716)941 7792</p>
+                                <p class="contacts" href="#">UK NO (+44)115 970 6256</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bottom_border">
+
+                    <div class="row" id="trainee_logo">
+
+                        <img src="./images/acca-approved-trainee-development-gold-logo-dark_dbuqdu.png" alt=""
+                            width="3% !important" height="">
+                    </div>
+                </div>
+                <div class="bottom_border">
+                    <div class="row">
+                        <p style="text-align: center;">IP address data powered by
+                            <span style="cursor: pointer; text-decoration: none!important; list-style: none;"> <a
+                                    href="https://ipinfo.io/" target="_blank">IPinfo</a> </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p style="text-align: center;">Copyright © 2023 by Saylani Welfare Int Trust</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- end -->
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
